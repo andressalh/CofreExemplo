@@ -53,8 +53,7 @@ public class DestravadoCofrePMTest extends CofrePMTest {
     
     @Test
     public void testDigitarUmNumeroPortaFechada() {
-        when(sensorMock.fechada())
-                .thenReturn(Boolean.TRUE);
+        when(sensorMock.fechada()).thenReturn(Boolean.TRUE);
         
         cofrePM.pressButton(0);
         
@@ -63,8 +62,7 @@ public class DestravadoCofrePMTest extends CofrePMTest {
     
     @Test
     public void testGravarSenhaValidaPortaFechadaDestravada() {
-        when(sensorMock.fechada())
-                .thenReturn(Boolean.TRUE);
+        when(sensorMock.fechada()).thenReturn(Boolean.TRUE);
         
         cofrePM.pressButton(1);
         assertEquals("1", cofrePM.getDisplay());
@@ -93,8 +91,7 @@ public class DestravadoCofrePMTest extends CofrePMTest {
     
     @Test
     public void testDigitarSenhaComMenosDeSeis() {
-        when(sensorMock.fechada())
-                .thenReturn(Boolean.TRUE);
+        when(sensorMock.fechada()).thenReturn(Boolean.TRUE);
         
         cofrePM.pressButton(1);
         assertEquals("1", cofrePM.getDisplay());
@@ -113,16 +110,14 @@ public class DestravadoCofrePMTest extends CofrePMTest {
     @Test
     public void testDigitarNumerosPortaFechadaEDepoisAbrirEDigitar() {
         //porta fechada
-        when(sensorMock.fechada())
-                .thenReturn(Boolean.TRUE);
+        when(sensorMock.fechada()).thenReturn(Boolean.TRUE);
         
         cofrePM.pressButton(9);
         cofrePM.pressButton(8);
         assertEquals("98", cofrePM.getDisplay());
 
         //abriu a porta
-        when(sensorMock.fechada())
-                .thenReturn(Boolean.FALSE);
+        when(sensorMock.fechada()).thenReturn(Boolean.FALSE);
         
         cofrePM.pressButton(7);
         assertEquals("Feche a porta antes de digitar a senha", cofrePM.getDisplay());

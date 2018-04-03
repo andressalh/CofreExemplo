@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="7" failures="0" name="cofre.DestravadoCofrePMTest" time="0.235" errors="0" skipped="0">
+<testsuite tests="18" failures="0" name="Cucumber01Test" time="0.75" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk1.8.0_161\jre\bin"/>
@@ -61,11 +61,22 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="cofre.DestravadoCofrePMTest" name="testDigitarSenhaComMenosDeSeis" time="0.172"/>
-  <testcase classname="cofre.DestravadoCofrePMTest" name="testClear" time="0"/>
-  <testcase classname="cofre.DestravadoCofrePMTest" name="testGravarSenhaValidaPortaFechadaDestravada" time="0"/>
-  <testcase classname="cofre.DestravadoCofrePMTest" name="testDigitarNumerosPortaFechadaEDepoisAbrirEDigitar" time="0"/>
-  <testcase classname="cofre.DestravadoCofrePMTest" name="testPortaNaoFechada" time="0"/>
-  <testcase classname="cofre.DestravadoCofrePMTest" name="testDigitarUmNumeroPortaFechada" time="0"/>
-  <testcase classname="cofre.DestravadoCofrePMTest" name="testInicializacao" time="0"/>
+  <testcase classname="Cofre destravado" name="Teste inicial" time="0.188"/>
+  <testcase classname="Cofre destravado" name="Teste vazio" time="0.015"/>
+  <testcase classname="Cofre destravado" name="Portao nao fecha" time="0.016"/>
+  <testcase classname="Cofre destravado" name="Digitar um numero com a porta fechada" time="0.015"/>
+  <testcase classname="Cofre destravado" name="Gravar Senha Valida Porta Fechada Destravada" time="0.031"/>
+  <testcase classname="Cofre destravado" name="Digitar Senha Com Menos De Seis" time="0"/>
+  <testcase classname="Cofre destravado" name="Digitar Numeros Porta Fechada E Depois Abrir E Digitar" time="0.015"/>
+  <testcase classname="Cofre travado" name="Senha invalida" time="0.016"/>
+  <testcase classname="Cofre travado" name="Senha pequena" time="0.016"/>
+  <testcase classname="Cofre travado" name="Senha valida" time="0.015"/>
+  <testcase classname="Validao Helper" name="Senha com numeros" time="0"/>
+  <testcase classname="Validao Helper" name="Senha com numeros" time="0.016"/>
+  <testcase classname="Validao Helper" name="Senha com numeros" time="0"/>
+  <testcase classname="Validao Helper" name="Senha com numeros" time="0"/>
+  <testcase classname="Validao Helper" name="Senha valida" time="0.015"/>
+  <testcase classname="Validao Helper" name="Senha valida" time="0.016"/>
+  <testcase classname="Validao Helper" name="Senha valida" time="0"/>
+  <testcase classname="Validao Helper" name="Senha valida" time="0"/>
 </testsuite>

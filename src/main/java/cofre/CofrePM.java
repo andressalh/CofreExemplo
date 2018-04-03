@@ -12,6 +12,7 @@ public class CofrePM {
     private Memoria memoria;
     public static int OK = 99;
 
+   
     public CofrePM(SensorPorta sensorPorta, Memoria memoria) {
         this.sensorPorta = sensorPorta;
         this.memoria = memoria;
@@ -51,6 +52,7 @@ public class CofrePM {
     private void realizarAbertura() {
         String senhaSalva = memoria.getSenha();
         if(senhaSalva.equals(display)) {
+            System.out.println("csenha"+senhaSalva);
             display = "senha correta. Cofre aberto";
             sensorPorta.destravar();
         }
